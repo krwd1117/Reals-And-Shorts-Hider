@@ -43,6 +43,7 @@
 /
 ├── manifest.json        # 확장 프로그램 설정 파일 (Manifest V3)
 ├── icons/               # 아이콘 이미지 폴더
+│   └── icon128.png      # 아이콘 이미지
 ├── popup/               # 팝업 UI 폴더
 │   ├── popup.html       # 팝업 구조
 │   ├── popup.css        # 팝업 스타일
