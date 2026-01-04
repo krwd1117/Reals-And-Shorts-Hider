@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Shorts & Reels Hider",
+  "version": "1.0",
+  "description": "YouTube Shorts와 Instagram Reels를 완전히 숨깁니다.",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "icons": {
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["scripts/youtube.js"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["*://*.instagram.com/*"],
+      "js": ["scripts/instagram.js"],
+      "run_at": "document_start"
+    }
+  ]
+}

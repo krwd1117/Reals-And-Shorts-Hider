@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Shorts & Reels Hider</h1>
+    <div class="status-box">
+      <p>현재 상태: <span id="status-text">작동 중</span></p>
+    </div>
+    <div class="toggle-group">
+      <div class="toggle-item">
+        <span>YouTube Shorts 숨기기</span>
+        <label class="switch">
+          <input type="checkbox" id="youtube-toggle" checked>
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div class="toggle-item">
+        <span>Instagram Reels 숨기기</span>
+        <label class="switch">
+          <input type="checkbox" id="instagram-toggle" checked>
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
